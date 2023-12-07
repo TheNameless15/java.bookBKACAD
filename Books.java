@@ -200,21 +200,6 @@ public class Books extends Function {
         input.nextLine();
         System.out.print("What is ISBN_code of the book for the updating: ");
         String isbnCode = input.nextLine();
-        /*System.out.print("Typing books name: ");
-        String bookTitle = input.nextLine();
-        System.out.print("Typing book author: ");
-        String author = input.nextLine();
-        System.out.print("Typing book publication year: ");
-        String publicationYear = input.nextLine();
-        System.out.print("Typing book genre: ");
-        String genre = input.nextLine();  
-        System.out.print("Typing book publishers: ");
-        String publishers = input.nextLine();
-        System.out.print("Typing book price: ");
-        double selling_price = input.nextDouble();
-        System.out.print("Typing book page_number: ");
-        int page_number = input.nextInt();
-        updateBooks(bookTitle,author,publicationYear,genre,publishers,selling_price,page_number,isbnCode);*/
         System.out.println("1. Book Title");
         System.out.println("2. Author");
         System.out.println("3. Publication Year");
@@ -230,6 +215,43 @@ public class Books extends Function {
                 System.out.print("Enter book title: ");
                 String book_title = input.nextLine();
                 updateBookBookTitle(book_title,isbnCode);
+                break;
+            case 2:
+                System.out.print("Enter author: ");
+                String author = input.nextLine();
+                updateBookAuthor(author,isbnCode);
+                break;
+
+            case 3:
+                System.out.print("Enter publication year: ");
+                String publication_year = input.nextLine();
+                updateBookPublicationYear(publication_year,isbnCode);
+                break;
+
+            case 4:
+                System.out.print("Enter genre: ");
+                String genre = input.nextLine();
+                updateBookGenre(genre,isbnCode);
+                break;
+
+            case 5:
+                System.out.print("Enter publishers: ");
+                String publishers = input.nextLine();
+                updateBookPublishers(publishers,isbnCode);
+                break;
+
+            case 6:
+                System.out.print("Enter price: ");
+                double price = input.nextDouble();
+                updateBookPrice(price,isbnCode);
+                break;
+
+            case 7:
+                System.out.print("Enter page number: ");
+                int page_number = input.nextInt();
+                updateBookPageNumber(page_number,isbnCode);
+                break;
+
         }
     }
 
